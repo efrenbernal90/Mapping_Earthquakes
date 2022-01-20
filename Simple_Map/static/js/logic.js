@@ -20,5 +20,12 @@ let airportData = "https://raw.githubusercontent.com/efrenbernal90/Mapping_Earth
 d3.json(airportData).then(function(data) {
     console.log(data);
   // Creating a GeoJSON layer with the retrieved data.
-  L.geoJSON(data).addTo(map);
+  L.geoJSON(data),{
+    onEachFeature: function(feature, layer){
+        console.log(layer.feature.faa);
+        layer.bindPopup("<h3>Airport Code: " + 
+        layer.feature[0].properties.faa + "</h3> <hr> <h3> Airport Name: " + 
+        layer.feature.properties.name + "</h3>");
+    }
+  }.addTo(map);
 });
