@@ -37,7 +37,8 @@ let torontoHoods = "https://raw.githubusercontent.com/efrenbernal90/Mapping_Eart
 let myStyle = {
   color: "#000EFF",
   fillColor: "#ffffa1",
-  weight: 1
+  weight: 1,
+  opacity: .67
 }
 
 // Grabbing our GeoJSON data.
