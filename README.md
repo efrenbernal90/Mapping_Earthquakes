@@ -98,5 +98,5 @@ d3.json(
 
 After adding more layers and popup functionality, the map appears like the following:
 
-![Dark_Map](Earthquake_Challenge\static\css\images\darkNav.png)
+![Dark_Map](Earthquake_Challenge/static/css/images/darkNav.png)
 
